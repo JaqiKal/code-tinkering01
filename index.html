@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>Code Tinkering Landing Page</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/index.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');  // Toggle the 'active' class
+    }
+  </script>
+
+</head>
+
+<!-- Landing page -->
+
+<body>
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html"><img class="logo-img" src="assets/images/logo.webp" alt="Website logo" /></a>
+  </div>
+  <div class="menu">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- Burger menu for mobile view -->
+    <div class="burger-menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page header section -->
+  <section id="headerSection">
+    <div>
+      <h1 class="visually-hidden">Let's code</h1>
+      <p>Fun-filled frolicking!</p>
+    </div>
+  </section>
+
+  <!-- Quote section -->
+  <section id="quoteSection">
+    <div>
+      <p>“The future is something which everyone reaches at the rate of sixty minutes an hour, whatever he does, whoever
+        he is.” — C.S. Lewis</p>
+      <span id="clock"></span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footerSection" class="footer">
+    <div class="footer-content">
+      <p class="time"></p>
+    </div>
+
+    <p class="footer-text"></p>
+    Website developed by <strong>Jaqi Kal</strong>. View more projects at
+    <a href="https://github.com/JaqiKal/" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/clock.js" defer></script>
+</body>
+
+</html>
