@@ -25,6 +25,7 @@ html {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   background: radial-gradient(circle, #ffe577 40%, #fda63a 100%);
+  background: radial-gradient(circle, #ffe577 40%, #fda63a 100%);
   display: flex;
   flex-direction: column;
   color: #2e2e2e;
@@ -39,6 +40,7 @@ body {
 
 /* Navbar styling */
 .navbar {
+  background: radial-gradient(circle, #fda63a 30%, rgb(255, 90, 0) 100%);
   background: radial-gradient(circle, #fda63a 30%, rgb(255, 90, 0) 100%);
   color: white;
   width: 100%;
@@ -140,6 +142,7 @@ body {
 
 /* Footer styling */
 .footer {
+  background: radial-gradient(circle, #fda63a 30%, #ff5a00 100%);
   background: radial-gradient(circle, #fda63a 30%, #ff5a00 100%);
   color: #8d0386;
   text-align: center;
