@@ -88,6 +88,10 @@ TBD
 
 TBD
 
+### Imagery
+
+All images used in this project are either original creations or sourced from reputable platforms. If an image is not my own, proper credit is provided to the creator or source. Unauthorized use of any images is prohibited without permission.
+
 </details>
 <br>
 
