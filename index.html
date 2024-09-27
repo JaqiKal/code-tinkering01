@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
   <!-- JavaScript -->
-  <script defer src="js/#.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 
 <!-- Landing page -->
@@ -22,17 +22,19 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
-      <h1>My Logo</h1>
+      <a href="index.html"><img class="logo-img" src="assets/images/index-page/logo.png" alt="Website logo" /></a>
+      <h1 class="visually-hidden">My Logo</h1>
     </div>
     <div class="nav-links" id="nav-links">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
+    <!-- Burger menu for mobile view -->
     <div class="hamburger" id="hamburger">
-      <span class="material-icons">menu</span>
+      <i class="fa-solid fa-bars"></i>
     </div>
   </nav>
 
