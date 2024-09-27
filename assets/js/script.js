@@ -14,3 +14,19 @@
  */
 
 // jshint esversion: 6
+
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the hamburger element
+  const hamburger = document.getElementById('hamburger');
+  
+  // Get the navigation links container
+  const navLinks = document.getElementById('nav-links');
+  
+  // Add a click event listener to the hamburger icon
+  hamburger.addEventListener('click', () => {
+    // Toggle the 'open' class on the navigation links container
+    navLinks.classList.toggle('open');
+  });
+});
