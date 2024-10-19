@@ -121,10 +121,7 @@ body {
 
 /* Header section styling */
 #hero {
-  background-image: url("/assets/images/hero.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("assets/images/hero.webp") center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -133,6 +130,7 @@ body {
   color: white;
   padding: 40px 20px;
 }
+
 
 .hero-content {
   transform: translateY(-150px);
