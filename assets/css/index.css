@@ -56,7 +56,31 @@ body {
 .logo-img {
   width: 80px;
   filter: drop-shadow(0 0.2rem 0.25rem rgb(255, 60, 0));
+  transition: transform 0.5s ease-in-out;
 }
+
+.logo-img:hover {
+  animation: wobble 0.6s ease-in-out infinite alternate;
+  /* Animate tilting back and forth */
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+    /* No rotation at the start */
+  }
+
+  50% {
+    transform: rotate(10deg);
+    /* Tilt 10 degrees to the right */
+  }
+
+  100% {
+    transform: rotate(-10deg);
+    /* Tilt 10 degrees to the left */
+  }
+}
+
 
 /* Nav links styling */
 .nav-links {
@@ -70,7 +94,7 @@ body {
 }
 
 .nav-links a {
-  color: #8d0386;
+  color: #2b190d;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -110,47 +134,41 @@ body {
   padding: 40px 20px;
 }
 
+.hero-content {
+  transform: translateY(-150px);
+  /* Adjust this value as needed */
+}
 
 #hero p {
-  font-size: 2rem;
-  color: #bb0eb2;
-  text-align: center
-}
-
-/* Quote section styling */
-#quoteSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 200px;
+  font-size: 4rem;
+  color: #2b190d;
   text-align: center;
-  padding: 20px;
 }
 
-#quoteSection p {
+#hero .hero-content #quote {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+/* Correct placement of #clock */
+#clock {
   font-size: 1.5rem;
-  color: #f89604;
-  margin-bottom: 10px;
-  /* Add space between the quote and the clock */
+  color: #2b190d;
+  /* Adjust text color */
+  text-shadow:
+    0px 0px 5px rgba(255, 255, 255, 0.7),
+    0px 0px 10px rgba(255, 255, 255, 0.8),
+    0px 0px 20px rgba(255, 255, 255, 1);
+  text-align: center;
 }
 
-#quoteSection span {
-  font-size: 1.5rem;
-  color: #f89604;
-}
-
-/* Footer styling */
+/* FOOTER STYLES */
 .footer {
-  background: radial-gradient(circle, #fda63a 30%, #ff5a00 100%);
-  background: radial-gradient(circle, #fda63a 30%, #ff5a00 100%);
-  color: #8d0386;
+  background: radial-gradient(circle, #fda63a 30%, rgb(255, 90, 0) 100%);
+  background: radial-gradient(circle, #fda63a 30%, rgb(255, 90, 0) 100%);
+  color: white;
   text-align: center;
-  padding: 5px 0;
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  margin: 0;
+  padding: 20px 0;
 }
 
 /* Social list styling */
@@ -199,13 +217,18 @@ body {
 }
 
 .footer-link {
-  color: #8d0386;
-  font-size: xx-small;
+  color: #2b190d;
+  font-size: small;
   text-decoration: none;
 }
 
 .footer-link:hover {
   color: #ffccff;
+}
+
+.footer-text {
+  font-size: small;
+  color: #2b190d;
 }
 
 /* --------------------- */
@@ -250,4 +273,15 @@ body {
   .nav-links a:hover {
     border-radius: 5px;
   }
+}
+
+/* Logo styling */
+.logo-img {
+  width: 80px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgb(255, 60, 0));
+}
+
+.hero-content {
+  transform: translateY(-180px);
+  /* Adjust this value as needed */
 }
